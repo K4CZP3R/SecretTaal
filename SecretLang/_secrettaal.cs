@@ -20,6 +20,7 @@ namespace SecretLang
         string[] row_0 = { "p", ";", "/" };
         public string decode(string todecode)
         {
+			todecode = todecode.ToLower();
             try
             {
                 string spacer = "";
@@ -77,6 +78,7 @@ namespace SecretLang
         }
         public string encode(string userinput)
         {
+			userinput = userinput.ToLower();
             string encoded = "";
             string spacer = "";
 
